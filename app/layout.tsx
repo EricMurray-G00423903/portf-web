@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Eric's Portfolio",
-  description: "A modern & minimalist portfolio built with Next.js, React, TypeScript, Tailwind CSS and more.",
+  description:
+    "A modern & minimalist portfolio built with Next.js, React, TypeScript, Tailwind CSS and more.",
 };
 
 export default function RootLayout({
@@ -29,12 +30,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
+          attribute="class"
+          defaultTheme="dark"
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
