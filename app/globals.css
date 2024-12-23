@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 html, body {
-  @apply overflow-hidden;
+  overflow: auto; /* Enable scrolling */
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 @layer base {
